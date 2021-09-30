@@ -142,6 +142,26 @@ h3,
 }
 .header__img > img {
 }
+.about {
+  max-width: 128rem;
+  height: 25rem;
+  background: var(--white);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about__content {
+}
+.about__content-title > h2 {
+  margin: 0 0 3rem;
+}
+.about__content-text > p {
+  margin: 0 0 2rem;
+}
+.about__video {
+  margin-left: 10rem;
+}
 
 /*
 @media screen and (min-width: 767px) {
