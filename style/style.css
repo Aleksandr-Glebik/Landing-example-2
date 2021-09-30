@@ -30,13 +30,14 @@ h1,
 h2,
 h3 {
   font-family: var(--mainFont);
+  font-weight: 400;
 }
 p {
   font-weight: 400;
 }
 h1,
 .h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   line-height: 1.2;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
   color: var(--white);
@@ -97,7 +98,7 @@ h3,
 }
 .pluses__content-text::before {
   width: 3.2rem;
-  height: 3.2rem;
+  height: inherit;
   background-color: var(--textColor);
   position: absolute;
   top: 0.2rem;
@@ -111,6 +112,37 @@ h3,
   align-items: center;
   justify-content: center;
 }
+.header {
+  max-width: 128rem;
+  height: 28.5rem;
+  background: #445162;
+  padding: 5rem 5rem 5.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header__content {
+}
+.header__content-title {
+  margin: 0 0 5.1rem;
+}
+.header__content-text {
+}
+.header__content-text-item {
+  margin: 0 0 0.5rem;
+}
+.header__content-text-item::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-right: 1.1rem;
+}
+.header__img {
+}
+.header__img > img {
+}
+
 /*
 @media screen and (min-width: 767px) {
   h1 {
