@@ -17,9 +17,6 @@
   /*font*/
   --mainFont: Arial, sans-serif;
   --iconFont: "socialico";
-  /*screens*/
-  --tablet: '(min-width: 767px)';
-  --desktop: '(min-width: 1024px)';
 }
 html,
 body {
@@ -33,16 +30,51 @@ h2,
 h3 {
   font-family: var(--mainFont);
 }
+p {
+  font-weight: 400;
+}
 
 h1 {
-    font-size: 4rem;
-    line-height: 1.2;
-    font-weight: 400;
-    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
-    color: var(--white);
+  font-size: 4rem;
+  line-height: 1.2;
 
-    @media screen (var(--tablet)) {
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  color: var(--white);
+}
+h2 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+
+  color: var(--primaryColor);
+}
+h3 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+
+  color: var(--primaryColor);
+}
+.p1 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--textColor);
+}
+.p2 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--textColor);
+}
+.lead {
+  font-size: 2rem;
+  line-height: 3.6rem;
+  color: var(--white);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 767px) {
+  h1 {
     font-size: 6rem;
-    }
-
+  }
+  h2 {
+  }
+  h3 {
+  }
 }
