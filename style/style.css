@@ -70,6 +70,26 @@ h3,
   color: var(--white);
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
+.btn {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+.btn__buy {
+  padding: 1.4rem 11.2rem;
+  margin: 0 2rem 2rem;
+}
+.btn__send {
+  padding: 1.4rem 4.8rem;
+}
 .wrapper {
   width: 128rem;
   margin: 0 auto;
@@ -210,10 +230,10 @@ h3,
   margin: 0 0 3.6rem;
 }
 .reviews__content {
-    display: grid;
-    gap: 4.2rem 4.2rem;
-    grid-template-columns: repeat(2, 55.5rem);
-    grid-template-rows: repeat(2, 13rem);
+  display: grid;
+  gap: 4.2rem 4.2rem;
+  grid-template-columns: repeat(2, 55.5rem);
+  grid-template-rows: repeat(2, 13rem);
 }
 .reviews__item {
   display: flex;
@@ -236,7 +256,7 @@ h3,
   width: 0;
   height: 0;
   border: 1.8rem solid transparent;
-  border-right-color: #ebebeb;;
+  border-right-color: #ebebeb;
   border-left: 0;
 }
 .reviews__item-text {
@@ -248,10 +268,63 @@ h3,
   margin: 1.5rem 0 0;
 }
 .reviews__item-img {
-    margin-right: 3.2rem;
+  margin-right: 3.2rem;
+}
+.buy {
+  max-width: 128rem;
+  background: var(--white);
+  padding: 5rem;
+}
+.buy__titlee {
+  text-align: center;
+  margin: 0 0 3rem;
+}
+.buy__content {
+  max-width: 99.2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.buy__item {
+  border: 0.2rem solid var(--secondaryColor);
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: inherit;
+  background: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.buy__iten-title {
+  text-align: center;
+  color: var(--white);
+  margin: 1.7rem 0;
+}
+.buy__item-price {
+  background: var(--white);
+  text-align: center;
+  font-size: 4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: var(--secondaryColor);
+  padding: 1.8rem 10.6rem;
+}
+.buy__item-scroll {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--white);
+  align-self: flex-start;
+}
+.buy__item-scroll p {
+  margin: 0;
 }
 
 /*
+
 @media screen and (min-width: 767px) {
   h1 {
     font-size: 6rem;
