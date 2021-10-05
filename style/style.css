@@ -268,6 +268,60 @@ h3,
 .reviews__item-img {
   margin-right: 3.2rem;
 }
+
+.buy {
+  max-width: 128rem;
+  background: var(--white);
+  padding: 5rem;
+}
+.buy__title {
+  text-align: center;
+  margin: 0 0 3rem;
+}
+.buy__content {
+  max-width: 99.2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.buy__item {
+  border: 0.2rem solid var(--secondaryColor);
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: inherit;
+  background: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.buy__iten-title {
+  text-align: center;
+  color: var(--white);
+  margin: 1.7rem 0;
+}
+.buy__item-price {
+  background: var(--white);
+  text-align: center;
+  font-size: 4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: var(--secondaryColor);
+  padding: 1.8rem 10.6rem;
+}
+.buy__item-scroll {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--white);
+  align-self: flex-start;
+}
+.buy__item-scroll p {
+  margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
   .header {
     padding: 4rem 3.5rem 4.1rem;
@@ -430,59 +484,21 @@ h3,
   .reviews__item-img > img {
     width: 15rem;
   }
+  .buy {
+    padding: 3rem;
+  }
+  .buy__content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .buy__item {
+    margin-bottom: 3rem;
+  }
 }
-.buy {
-  max-width: 128rem;
-  background: var(--white);
-  padding: 5rem;
-}
-.buy__title {
-  text-align: center;
-  margin: 0 0 3rem;
-}
-.buy__content {
-  max-width: 99.2rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.buy__item {
-  border: 0.2rem solid var(--secondaryColor);
-  border-radius: 0.5rem;
-  width: 30rem;
-  height: inherit;
-  background: var(--secondaryColor);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.buy__iten-title {
-  text-align: center;
-  color: var(--white);
-  margin: 1.7rem 0;
-}
-.buy__item-price {
-  background: var(--white);
-  text-align: center;
-  font-size: 4rem;
-  line-height: 3rem;
-  font-weight: 400;
-  color: var(--secondaryColor);
-  padding: 1.8rem 10.6rem;
-}
-.buy__item-scroll {
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: var(--white);
-  align-self: flex-start;
-}
-.buy__item-scroll p {
-  margin: 0;
-}
+
+
 .footer {
   max-width: 128rem;
   margin: 0 auto;
