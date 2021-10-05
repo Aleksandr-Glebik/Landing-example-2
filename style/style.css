@@ -98,9 +98,77 @@ h3,
   align-self: center;
 }
 .wrapper {
-  width: 128rem;
+  max-width: 128rem;
   margin: 0 auto;
 }
+
+.header {
+  max-width: 128rem;
+  min-height: 28.5rem;
+  background: #445162;
+  padding: 5rem 5rem 5.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header__content {
+}
+.header__content-title {
+  margin: 0 0 5.1rem;
+}
+.header__content-text {
+}
+.header__content-text-item {
+  margin: 0 0 0.5rem;
+}
+.header__content-text-item::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-right: 1.1rem;
+}
+.header__img {
+}
+.header__img > img {
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 4rem 3.5rem 4.1rem;
+    min-height: 25rem;
+  }
+  .header__content-title {
+    margin: 0 0 2.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+  .header__img > img {
+    width: 60rem;
+  }
+  .header__content-title {
+    font-size: 5rem;
+    margin: 1rem 0 1rem;
+  }
+}
+
+.about {
+  max-width: 128rem;
+  height: 25rem;
+  background: var(--white);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .pluses {
   max-width: 128rem;
   height: 41.4rem;
@@ -138,45 +206,6 @@ h3,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.header {
-  max-width: 128rem;
-  height: 28.5rem;
-  background: #445162;
-  padding: 5rem 5rem 5.1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.header__content {
-}
-.header__content-title {
-  margin: 0 0 5.1rem;
-}
-.header__content-text {
-}
-.header__content-text-item {
-  margin: 0 0 0.5rem;
-}
-.header__content-text-item::before {
-  content: "\f00c";
-  font-family: FontAwesome;
-  font-size: 2.2rem;
-  color: var(--white);
-  margin-right: 1.1rem;
-}
-.header__img {
-}
-.header__img > img {
-}
-.about {
-  max-width: 128rem;
-  height: 25rem;
-  background: var(--white);
-  padding: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 .about__content {
 }
@@ -421,16 +450,3 @@ h3,
   left: 1.05rem;
   top: 1rem;
 }
-
-/*
-
-@media screen and (min-width: 767px) {
-  h1 {
-    font-size: 6rem;
-  }
-  h2 {
-  }
-  h3 {
-  }
-}
- */
