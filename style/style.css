@@ -268,7 +268,6 @@ h3,
 .reviews__item-img {
   margin-right: 3.2rem;
 }
-
 .buy {
   max-width: 128rem;
   background: var(--white);
@@ -321,7 +320,98 @@ h3,
 .buy__item-scroll p {
   margin: 0;
 }
-
+.footer {
+  max-width: 128rem;
+  margin: 0 auto;
+  background: var(--secondaryColor);
+  padding: 5rem;
+}
+.footer__title {
+  color: var(--white);
+  text-align: center;
+  margin: 0 0 3rem;
+}
+.footer__contacts {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+}
+.footer__contacts-form {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer__input {
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2.1rem;
+  color: var(--grey);
+  font-family: var(--mainFont);
+}
+.footer__textarea {
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  text-align: start;
+  width: 47.2rem;
+  height: 17rem;
+  color: var(--grey);
+  font-family: var(--mainFont);
+}
+.footer__contacts__links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.6rem;
+}
+.footer__link-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.footer__link-item a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__link-item > img {
+  width: 2.4rem;
+  height: 2.6rem;
+  margin-right: 0.5rem;
+}
+.footer__link-item > span {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--white);
+}
+.footer__link-item > span:hover {
+  color: rgb(193, 186, 186);
+}
+.footer__contacts-social {
+  margin-top: 2rem;
+  width: 24rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contacts-social i {
+  background: var(--white);
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  position: relative;
+}
+.footer__contacts-social i:hover {
+  background-color: rgb(193, 186, 186);
+}
+.fab:before {
+  font-size: 2.4rem;
+  color: var(--secondaryColor);
+  position: absolute;
+  left: 1.05rem;
+  top: 1rem;
+}
 @media screen and (max-width: 1024px) {
   .header {
     padding: 4rem 3.5rem 4.1rem;
@@ -496,98 +586,25 @@ h3,
   .buy__item {
     margin-bottom: 3rem;
   }
-}
-
-
-.footer {
-  max-width: 128rem;
-  margin: 0 auto;
-  background: var(--secondaryColor);
-  padding: 5rem;
-}
-.footer__title {
-  color: var(--white);
-  text-align: center;
-  margin: 0 0 3rem;
-}
-.footer__contacts {
-  height: 30rem;
-  display: flex;
-  justify-content: center;
-}
-.footer__contacts-form {
-  width: 50rem;
-  display: flex;
-  flex-direction: column;
-}
-.footer__input {
-  border: none;
-  text-decoration: none;
-  padding: 1rem 1.4rem;
-  border-radius: 0.5rem;
-  margin-bottom: 2.1rem;
-  color: var(--grey);
-  font-family: var(--mainFont);
-}
-.footer__textarea {
-  border: none;
-  text-decoration: none;
-  padding: 1rem 1.4rem;
-  border-radius: 0.5rem;
-  text-align: start;
-  width: 47.2rem;
-  height: 17rem;
-  color: var(--grey);
-  font-family: var(--mainFont);
-}
-.footer__contacts__links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 4.6rem;
-}
-.footer__link-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.8rem;
-}
-.footer__link-item a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.footer__link-item > img {
-  width: 2.4rem;
-  height: 2.6rem;
-  margin-right: 0.5rem;
-}
-.footer__link-item > span {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: var(--white);
-}
-.footer__link-item > span:hover {
-  color: rgb(193, 186, 186);
-}
-.footer__contacts-social {
-  margin-top: 2rem;
-  width: 24rem;
-  display: flex;
-  justify-content: space-between;
-}
-.footer__contacts-social i {
-  background: var(--white);
-  width: 4.3rem;
-  height: 4.3rem;
-  border-radius: 50%;
-  position: relative;
-}
-.footer__contacts-social i:hover {
-  background-color: rgb(193, 186, 186);
-}
-.fab:before {
-  font-size: 2.4rem;
-  color: var(--secondaryColor);
-  position: absolute;
-  left: 1.05rem;
-  top: 1rem;
+  .footer {
+    min-height: 60rem;
+  }
+  .footer__contacts {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contacts__links {
+    margin-top: 5rem;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(2, 27rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .footer__link-item {
+  }
+  .footer__contacts-social {
+    margin-top: 1rem;
+  }
 }
